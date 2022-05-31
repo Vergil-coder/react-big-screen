@@ -1,0 +1,43 @@
+.borderOne::after{
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  right: -2px;
+  content: '';
+  width: 111px;
+  height: 35px;
+  background-image: url('../../assets/images/border1.png');
+}
+.borderOne::before{
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -2px;
+  content: '';
+  width: 111px;
+  height: 35px;
+  background-image: url('../../assets/images/border1.png');
+  transform: rotate(180deg);
+}
+.lineOne::after{
+  display: block;
+  content: '';
+  position: absolute;
+  left: -105px;
+  bottom: 50%;
+  transform: translateY(-50%);
+  width: 97px;
+  height: 2px;
+  background-image: url('../../assets/images/titleLine.png');
+}
+.lineOne::before{
+  display: block;
+  content: '';
+  position: absolute;
+  right: -105px;
+  bottom: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  width: 97px;
+  height: 2px;
+  background-image: url('../../assets/images/titleLine.png');
+}

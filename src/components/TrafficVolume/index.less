@@ -1,0 +1,88 @@
+.traffic-volume{
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #d8dee0;
+
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    p{
+      margin-bottom: 0;
+    }
+    li{
+      width: 100%;
+      height: 60px;
+      background-color: rgba(8, 40, 69,.3);
+      border:1px solid #0e406e;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      img{
+        width: 25px;
+        height: 25px;
+        display: block;
+        margin-right: 3px;
+      }
+      p{
+        display: flex;
+        align-items: center;
+      }
+      :global{
+        .passengerTraffic,.freight{
+          background: linear-gradient(to left, #06aae3, #06aae3) left top no-repeat, 
+          linear-gradient(to bottom, #06aae3, #06aae3) left top no-repeat, 
+          linear-gradient(to left, #06aae3, #06aae3) right top no-repeat,
+          linear-gradient(to bottom, #06aae3, #06aae3) right top no-repeat, 
+          linear-gradient(to left, #06aae3, #06aae3) left bottom no-repeat,
+          linear-gradient(to bottom, #06aae3, #06aae3) left bottom no-repeat,
+          linear-gradient(to left, #06aae3, #06aae3) right bottom no-repeat,
+          linear-gradient(to left, #06aae3, #06aae3) right bottom no-repeat;
+          /*设置大小*/
+          background-size: 5px 1px, 1px 5px, 5px 1px, 1px 5px,5px 1px, 1px 5px, 5px 1px, 1px 5px;
+          background-color: rgba(15, 54, 87,.4);
+          padding: 10px 0;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      
+    }
+}
+
+.way{
+  width: 20%;
+}
+.passenger-traffic{
+  width: 35%;
+  span{
+    color: #08baa1;
+    font-weight: 600;
+  }
+}
+.freight{
+  width: 35%;
+  span{
+    color: #e3e20d;
+    font-weight: 600;
+  }
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+}
